@@ -1,0 +1,30 @@
+.formc input[type=text] {
+
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.formc input[type="color"] {
+    bottom: 8px;
+    height: 34px;
+    margin-left: 10px;
+    padding: 0;
+    position: absolute;
+}
+.formc label {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 5px;
+	text-transform:capitalize;
+}
+.formc input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 10px 2px;
+    cursor: pointer;
+	font-size:18px;
+	text-transform:capitalize;
+}

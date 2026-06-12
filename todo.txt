@@ -1,0 +1,9 @@
+1. All Pages Banner along with text  -- done
+2. FAQ page in the admin panel
+ --- done
+3. All contact forms data to be saved in the backend + email notifications (will provide the email id)
+ --- done in admin only
+4. Blog section in the admin panel --- done
+5. Contact page details in the admin panel --- done
+6. Meta Title and Meta Descriptions field for all pages of the website
+7. Top banner section in the admin panel --- done

@@ -1,0 +1,174 @@
+<!-- Add -->
+<div class="modal fade" id="addnew">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b>Add New</b></h4>
+            </div>
+            <form class="form-horizontal" method="POST" action="crew_add3.php" enctype="multipart/form-data">
+            <div class="modal-body">
+            		<p><b>Title</b></p>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" name="name" >
+                        </div>
+                    </div>
+                    <p><b>Page</b></p>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <select class="form-control" id="hide" name="cate">
+                                <option value="About">About</option>
+                                <option value="Portfolio">Portfolio</option>
+                                <option value="Team">Team</option>
+                                <option value="Faq">FAQ</option>
+                                <option value="Blog">Blog</option>
+                                <option value="Contact">Contact</option>
+                                <optgroup label="Service">
+								    <option value="Paid Advertising">Paid Advertising</option>
+	                                <option value="Social Media Marketing">Social Media Marketing</option>
+	                                <option value="WhatsApp Marketing">WhatsApp Marketing</option>
+	                                <option value="Video Editing Services">Video Editing Services</option>
+	                                <option value="SEO">SEO</option>
+	                                <option value="YouTube SEO">YouTube SEO</option>
+	                                <option value="Website Design & Development">Website Design & Development</option>
+	                                <option value="Graphic Design Services">Graphic Design Services</option>
+	                                <option value="SMS Marketing">SMS Marketing</option>
+	                                <option value="Content Marketing">Content Marketing</option>
+	                                <option value="Reels Marketing">Reels Marketing</option>
+	                                <option value="Marketing Strategy & Planning">Marketing Strategy & Planning</option>
+							    </optgroup>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">
+                <i class="fa fa-close"></i> Close</button>
+                <button type="submit" class="btn btn-primary btn-flat" name="add">
+                <i class="fa fa-save"></i> Save</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Update Photo -->
+<div class="modal fade" id="edit_photo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b><span class="name"></span></b></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="POST" action="crew_photo3.php" enctype="multipart/form-data">
+                    <input type="hidden" class="srid" name="id">
+                    
+                    <div class="form-group">
+                        <label for="photo" class="col-sm-3 control-label">Photo</label>
+                        <div class="col-sm-9">
+                            <input type="file" id="photo" name="photo" required>
+                        </div>
+                    </div>   
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">
+                <i class="fa fa-close"></i> Close</button>
+                <button type="submit" class="btn btn-success btn-flat" name="upload">
+                <i class="fa fa-check-square-o"></i> Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete -->
+<div class="modal fade" id="delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b>Deleting...</b></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="POST" action="crew_delete3.php">
+                    <input type="hidden" class="srid" name="id">
+                    <div class="text-center">
+                        <p>DELETE</p>
+                        <h2 class="bold name"></h2>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">
+                <i class="fa fa-close"></i> Close</button>
+                <button type="submit" class="btn btn-danger btn-flat" name="delete"><i class="fa fa-trash">
+                	
+                </i> Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit -->
+<div class="modal fade" id="edit">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b>Edit </b></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="POST" action="crew_edit3.php" enctype="multipart/form-data">
+                    <input type="hidden" class="srid" name="id">
+                    
+                    <div class="form-group">
+                        <label for="edit_name" class="col-sm-1 control-label">Title</label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control" id="edit_name" name="name" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit_name" class="col-sm-1 control-label">Title</label>
+                        <div class="col-sm-11">
+                            <select class="form-control" id="edit_hide" name="cate">
+                                <option value="About">About</option>
+                                <option value="Portfolio">Portfolio</option>
+                                <option value="Team">Team</option>
+                                <option value="Faq">FAQ</option>
+                                <option value="Blog">Blog</option>
+                                <option value="Contact">Contact</option>
+                                <optgroup label="Service">
+								    <option value="Paid Advertising">Paid Advertising</option>
+	                                <option value="Social Media Marketing">Social Media Marketing</option>
+	                                <option value="WhatsApp Marketing">WhatsApp Marketing</option>
+	                                <option value="Video Editing Services">Video Editing Services</option>
+	                                <option value="SEO">SEO</option>
+	                                <option value="YouTube SEO">YouTube SEO</option>
+	                                <option value="Website Design & Development">Website Design & Development</option>
+	                                <option value="Graphic Design Services">Graphic Design Services</option>
+	                                <option value="SMS Marketing">SMS Marketing</option>
+	                                <option value="Content Marketing">Content Marketing</option>
+	                                <option value="Reels Marketing">Reels Marketing</option>
+	                                <option value="Marketing Strategy & Planning">Marketing Strategy & Planning</option>
+							    </optgroup>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">
+                <i class="fa fa-close"></i> Close</button>
+                <button type="submit" class="btn btn-success btn-flat" name="edit">
+                <i class="fa fa-check-square-o"></i> Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

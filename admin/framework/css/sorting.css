@@ -1,0 +1,26 @@
+.bg-clr22 {
+  border: solid 1px;
+    text-align: center;
+}
+.bg-clr22 th {
+    background: #333;
+    color: #fff;
+    border: solid 1px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.del-bttn {
+    background: #696969;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text-email {
+    text-transform: none;
+}
+.new-show .table-responsive {
+    overflow: hidden;
+}
